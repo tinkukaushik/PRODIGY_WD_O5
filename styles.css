@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+    background-image: url('https://i.pinimg.com/originals/bd/72/d1/bd72d10c741dde2ce2684577ffa0d86f.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    height: 600px;
+    width: 500px;
+    background: #55ddffc6;
+    padding: 20px;
+    border-radius: 19px;
+    box-shadow: 0 4px 30px rgba(47, 0, 255, 0.215);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 400px;
+}
+
+button {
+    padding: 10px;
+    box-shadow: 2px 4px 0px black;
+    margin-top: 10px;
+    border: none;
+    background: #007bff;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+button:hover {
+    background: #00254f;
+    box-shadow: 2px 2px 0px black;
+}
+
+.hidden {
+    display: none;
+
+}
+
+#weatherDisplay img {
+    width: 150px;
+    height: 150px;
+    color: white;
+    margin: 0px;
+}
+#map {
+    height: 200px;
+   
+    margin-top: 20px;
+    width: 100%;
+    right: -700px;
+    top: -600px;
+}
+
+#airQuality {
+    margin-top: 20px;
+}
+#countryFlag {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+}
+.nameflag {
+    display: flex; flex-direction: row; position: relative;left: 180px; align-items: center;
+}
+ /* responsiveness */
+ @media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        height: 90%;
+    }
+    .nameflag {
+        position: relative;
+        align-items: center;
+        left: 110px;
+    }
+    #weatherDisplay img {
+        width: 100px;
+        height: 100px;
+    }
+    #map {
+        height: 150px;
+        right: 0;
+        top: 0;
+    }
+    #countryFlag {
+        width: 40px;
+    }
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    }
+ 
+ footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    bottom: 0px;
+}
+
+footer p {
+    margin: 5px 0;
+    bottom: 0px;
+}
