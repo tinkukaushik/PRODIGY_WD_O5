@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weathery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: rgb(255, 255, 255); font-weight: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 2rem; text-shadow: 0px 0px 5px white; "> The Weathery</h1><hr style="width:100px; color: antiquewhite;">
+        <p>Get weather details of your hometown by searching</p>
+        <form id="locationForm">
+            <input type="text" id="locationInput" placeholder="Enter location" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <hr>
+        <h2>The current weather condition on </h2>
+        <div id="weatherDisplay" class="hidden" style="margin-bottom: 0px;">
+           
+        <div class="nameflag" >
+            <h2 id="locationName" style="color: rgb(255, 255, 255); font-weight: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 2rem; text-shadow: 0px 0px 5px white;"></h2>
+            <img id="countryFlag" src="" alt="Country Flag" style="width: auto; height:30px;">
+        </div>
+            <p id="temperature" style="color: rgb(20, 0, 61); font-weight: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2rem; text-shadow: 0px 0px 5px white;"></p>
+            <p id="condition" style="color: rgb(20, 0, 60); font-weight: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2rem; text-shadow: 0px 0px 5px white;"></p>
+            <p id="wind" style="color: rgb(16, 0, 49); font-weight: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2rem; text-shadow: 0px 0px 5px white;"></p>
+            <img id="weatherIcon" src="" alt="" style="margin: 0px;">
+            
+               
+            <div id="map" style="height: 300px; width: 300px;"> <h2 style="top :-10000px"> map</h2></div>
+            
+        </div>
+        
+    </div>
+    <footer>
+        <p>&copy; 2023 The Weathery. All rights reserved.</p>
+       
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
